@@ -5,6 +5,10 @@ body:not(.overlay-header) .primary-menu > li > a, body:not(.overlay-header) .pri
     color: #7b152a;
 }
 
+#site-header {
+    background-color: #d9ebf5;
+}
+
 #site-content .entry-header {
-    background-color: #2d5405;
+    background-color: #d9ebf5;
 }
