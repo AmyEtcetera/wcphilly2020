@@ -2,7 +2,7 @@
 
 /* Test, see if it's working...  */
 body:not(.overlay-header) .primary-menu > li > a, body:not(.overlay-header) .primary-menu > li > .icon, .modal-menu a, .footer-menu a, .footer-widgets a, #site-footer .wp-block-button.is-style-outline, .wp-block-pullquote::before, .singular:not(.overlay-header) .entry-header a, .archive-header a, .header-footer-group .color-accent, .header-footer-group .color-accent-hover:hover {
-    color: #9cc8f3;
+    color: #7b152a;
 }
 
 #site-content .entry-header {
