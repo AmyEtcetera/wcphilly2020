@@ -244,13 +244,13 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
   z-index: 1;
 }
 
-.section-inner.medium {
+body:not(.blog) .section-inner.medium {
   max-width: 40rem;
   position: relative;
   z-index: 10;
 }
 @media (min-width: 700px) {
-  .section-inner.medium {
+  body:not(.blog) .section-inner.medium:not(.blog) {
     max-width: 65rem;
   }
 }
@@ -329,7 +329,7 @@ body:not(.blog):not(.single-post) .entry-title {
 
 .single-post .section-inner.medium {
   background: white;
-  max-width: 80rem;
+  max-width: 75rem;
   padding: 3rem 3rem;
   position: relative;
   z-index: 10;
@@ -340,7 +340,7 @@ body:not(.blog):not(.single-post) .entry-title {
 }
 @media (min-width: 700px) {
   .single-post .section-inner.medium {
-    max-width: 90rem;
+    max-width: 85rem;
     padding: 5rem 5rem;
   }
 }
