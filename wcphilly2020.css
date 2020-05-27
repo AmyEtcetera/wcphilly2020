@@ -468,8 +468,8 @@ a:focus {
 }
 
 .jetpack_widget_social_icons svg {
-  color: inherit;
-  fill: #c0e1f9;
+  color: #c0e1f9 !important;
+  fill: #c0e1f9 !important;
   height: inherit;
   vertical-align: middle;
   width: inherit;
