@@ -30,6 +30,19 @@
     Helvetica, sans-serif;
 }
 
+#site-header,
+.footer-nav-widgets-wrapper,
+#site-footer,
+.menu-modal,
+.menu-modal-inner,
+.search-modal-inner,
+.archive-header,
+.singular .entry-header,
+.singular .featured-media:before,
+.wp-block-pullquote:before {
+  background-color: transparent;
+}
+
 @supports (font-variation-settings: normal) {
   .widget-content cite,
   .widget-content figcaption,
@@ -57,6 +70,24 @@
   .heading-size-4 {
     font-size: 3rem;
   }
+}
+
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+h2 a:focus,
+h3 a:focus,
+h4 a:focus,
+h5 a:focus,
+h6 a:focus {
+  color: black;
 }
 
 button:not(.toggle),
@@ -130,7 +161,7 @@ input[type="submit"]:hover {
 
 @media (min-width: 700px) {
   .modal-menu ul li {
-    border-left-color: #7a1629;
+    border-left-width: 0;
   }
 }
 
