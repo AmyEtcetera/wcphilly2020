@@ -588,6 +588,10 @@ a.to-the-top {
 /*	Sponsors
 /* ----------------------------------------------- */
 
+.wcb_sponsor-template-default.single .post-meta-wrapper {
+  display: none;
+}
+
 .wcb_widget_sponsors .sponsor-logo img {
   max-height: 80px !important;
   margin: 0 auto;
