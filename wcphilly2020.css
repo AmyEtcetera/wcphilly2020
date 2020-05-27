@@ -426,6 +426,8 @@ blockquote,
 
 .is-style-outline .wp-block-button__link:not(.has-text-color):hover,
 .is-style-outline .wp-block-button__link:not(.has-text-color):focus {
+  background-color: #7a1629;
+  border: none;
   color: white;
 }
 
@@ -467,7 +469,9 @@ input[type="submit"]:focus,
 .bg-accent-hover:focus,
 :root .has-accent-background-color:focus,
 .comment-reply-link:focus {
-  background-color: #450c17;
+  background-color: white;
+  color: #7a1629;
+  outline: solid 2px #7a1629;
 }
 
 blockquote,
