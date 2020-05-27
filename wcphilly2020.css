@@ -549,11 +549,6 @@ a:focus {
   border: solid 1px #e8bfc7;
   color: white;
 }
- {
-  background-color: #89283f;
-  border: solid 1px #e8bfc7;
-  color: white;
-}
 
 .footer-menu a,
 .footer-widgets a {
