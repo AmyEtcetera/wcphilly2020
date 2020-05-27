@@ -128,6 +128,12 @@ input[type="submit"]:hover {
   color: #7a1629;
 }
 
+@media (min-width: 700px) {
+  .modal-menu ul li {
+    border-left-color: #7a1629;
+  }
+}
+
 /* ----------------------------------------------- */
 /*	Site Header
 /* ----------------------------------------------- */
@@ -228,13 +234,13 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
 }
 
 .section-inner.medium {
-  max-width: 65rem;
+  max-width: 40rem;
   position: relative;
   z-index: 10;
 }
 @media (min-width: 700px) {
   .section-inner.medium {
-    max-width: 60rem;
+    max-width: 65rem;
   }
 }
 
