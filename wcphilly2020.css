@@ -239,7 +239,7 @@ body:not(.blog) .section-inner.medium {
   color: #7a1629;
 }
 
-body:not(.blog):not(.single-post) .entry-title {
+body:not(.blog):not(.single) .entry-title {
   background: white;
   padding: 2rem 2rem;
 
@@ -306,7 +306,7 @@ body:not(.blog):not(.single-post) .entry-title {
   z-index: 1;
 }
 
-.single-post .section-inner.medium {
+.single .section-inner.medium {
   background: white;
   max-width: 75rem;
   padding: 3rem 3rem;
@@ -442,7 +442,7 @@ input[type="submit"],
 .bg-accent-hover:focus,
 :root .has-accent-background-color,
 .comment-reply-link {
-  background-color: #450c17;
+  background-color: #7a1629;
 }
 
 button:not(.toggle):hover,
@@ -467,7 +467,7 @@ input[type="submit"]:focus,
 .bg-accent-hover:focus,
 :root .has-accent-background-color:focus,
 .comment-reply-link:focus {
-  background-color: #7a1629;
+  background-color: #450c17;
 }
 
 blockquote,
@@ -543,9 +543,9 @@ a:focus {
 }
 
 #site-footer {
-  background-color: #a4cdf0;
+  background-color: #d4f1ff;
   border-color: transparent;
-  color: #450c17;
+  color: #a4cdf0;
   padding: 1.5rem 0;
 }
 @media (min-width: 700px) {
