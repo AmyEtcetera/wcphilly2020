@@ -174,11 +174,13 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
 /*	Entry Header
 /* ----------------------------------------------- */
 
-.entry-header {
+.entry-header,
+.archive-header {
   position: relative;
 }
 
-.singular .entry-header {
+.singular .entry-header,
+.archive-header {
   background: #a4cdf0
     url("https://cdn.jsdelivr.net/gh/AmyEtcetera/wcphilly2020@master/images/wcphilly2020-pattern.svg")
     top 80px left/450px 360px repeat;
@@ -191,7 +193,14 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
   }
 }
 
-.entry-header:before {
+.archive-header a,
+.header-footer-group .color-accent,
+.header-footer-group .color-accent-hover:hover {
+  color: #7a1629;
+}
+
+.entry-header:before,
+.archive-header:before {
   background: url("https://cdn.jsdelivr.net/gh/AmyEtcetera/wcphilly2020@master/images/gradient-mask.svg")
     top left/100% no-repeat;
   top: 0;
@@ -207,7 +216,8 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
   z-index: 0;
 }
 
-.entry-header:after {
+.entry-header:after,
+.archive-header:after {
   background: url("https://cdn.jsdelivr.net/gh/AmyEtcetera/wcphilly2020@master/images/wave.svg")
     bottom center/100% no-repeat;
   bottom: 0;
@@ -223,13 +233,15 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
   z-index: 1;
 }
 
-body:not(.blog) .section-inner.medium {
+body:not(.blog):not(.search-results) .section-inner.medium,
+.archive-header .section-inner.medium {
   max-width: 40rem;
   position: relative;
   z-index: 10;
 }
 @media (min-width: 700px) {
-  body:not(.blog) .section-inner.medium:not(.blog) {
+  body:not(.blog):not(.search-results) .section-inner.medium,
+  .archive-header .section-inner.medium {
     max-width: 65rem;
   }
 }
@@ -239,7 +251,8 @@ body:not(.blog) .section-inner.medium {
   color: #7a1629;
 }
 
-body:not(.blog):not(.single) .entry-title {
+body:not(.blog):not(.search-results):not(.single) .entry-title,
+.archive-header .section-inner.medium {
   background: white;
   padding: 2rem 2rem;
 
@@ -249,8 +262,19 @@ body:not(.blog):not(.single) .entry-title {
 }
 
 .entry-title,
-.entry-title a {
+.entry-title a,
+.entry-title a:hover,
+.entry-title a:focus,
+.archive-title,
+.archive-title a,
+.archive-title a:hover,
+.archive-title a:focus {
   color: #7a1629;
+}
+
+.search-results .entry-header:before,
+.search-results .entry-header:after {
+  display: none;
 }
 
 /* ----------------------------------------------- */
