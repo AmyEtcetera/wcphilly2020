@@ -111,7 +111,6 @@ input[type="reset"]:focus,
 input[type="reset"]:hover,
 input[type="submit"]:focus,
 input[type="submit"]:hover {
-  background-color: #2a6f9e;
   text-decoration: none !important;
 }
 
@@ -464,9 +463,16 @@ a:focus {
 }
 
 .footer-menu a,
-.footer-widgets a,
-.jetpack_widget_social_icons a {
+.footer-widgets a {
   color: #c0e1f9;
+}
+
+.jetpack_widget_social_icons svg {
+  color: inherit;
+  fill: #c0e1f9;
+  height: inherit;
+  vertical-align: middle;
+  width: inherit;
 }
 
 #site-footer {
