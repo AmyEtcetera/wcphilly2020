@@ -76,6 +76,34 @@ input[type="submit"],
   background-color: #7a1629;
 }
 
+button:focus,
+button:hover,
+.button:focus,
+.button:hover,
+.faux-button:focus,
+.faux-button:hover,
+.wp-block-button .wp-block-button__link:focus,
+.wp-block-button .wp-block-button__link:hover,
+.wp-block-file .wp-block-file__button:focus,
+.wp-block-file .wp-block-file__button:hover,
+input[type="button"]:focus,
+input[type="button"]:hover,
+input[type="reset"]:focus,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+  text-decoration: none !important;
+}
+
+.footer-nav-widgets-wrapper button:not(.toggle):hover,
+.footer-nav-widgets-wrapper
+  button:not(.toggle):focus
+  .search-form
+  .search-submit:focus,
+.search-form .search-submit:hover {
+  background-color: #89283f;
+}
+
 /* ----------------------------------------------- */
 /*	Menu Modal
 /* ----------------------------------------------- */
@@ -102,7 +130,7 @@ input[type="submit"],
 
 /* ----------------------------------------------- */
 /*	Site Header
-  /* ----------------------------------------------- */
+/* ----------------------------------------------- */
 
 #site-header {
   background: #d4f1ff;
@@ -148,7 +176,7 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
 
 /* ----------------------------------------------- */
 /*	Entry Header
-  /* ----------------------------------------------- */
+/* ----------------------------------------------- */
 
 .entry-header {
   position: relative;
@@ -200,7 +228,7 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
 }
 
 .section-inner.medium {
-  max-width: 40rem;
+  max-width: 65rem;
   position: relative;
   z-index: 10;
 }
@@ -231,7 +259,7 @@ body:not(.blog):not(.single-post) .entry-title {
 
 /* ----------------------------------------------- */
 /*	Blog Specific
-  /* ----------------------------------------------- */
+/* ----------------------------------------------- */
 
 .blog .entry-header:before,
 .blog .entry-header:after {
@@ -326,7 +354,7 @@ body:not(.blog):not(.single-post) .entry-title {
 
 /* ----------------------------------------------- */
 /*	Main Entry Content
-  /* ----------------------------------------------- */
+/* ----------------------------------------------- */
 
 .wp-block-pullquote:before,
 blockquote,
@@ -378,7 +406,7 @@ a:focus {
 
 /* ----------------------------------------------- */
 /*	Footer
-  /* ----------------------------------------------- */
+/* ----------------------------------------------- */
 
 .footer-nav-widgets-wrapper {
   background-color: #450c17;
@@ -387,6 +415,11 @@ a:focus {
 
 .footer-widgets-outer-wrapper {
   border-color: transparent;
+}
+@media (min-width: 700px) {
+  .footer-widgets-outer-wrapper {
+    padding: 4rem 0;
+  }
 }
 
 .footer-nav-widgets-wrapper button,
@@ -433,7 +466,7 @@ a.to-the-top {
 
 /* ----------------------------------------------- */
 /*	Sponsors
-  /* ----------------------------------------------- */
+/* ----------------------------------------------- */
 
 .wcb_widget_sponsors .sponsor-logo img {
   max-height: 80px !important;
@@ -462,7 +495,7 @@ a.to-the-top {
 
 .sponsor-level a.sponsor-logo:hover,
 .sponsor-level a.sponsor-logo:focus {
-  opacity: 0.75;
+  opacity: 0.9;
 }
 
 .sponsor-level-title {
