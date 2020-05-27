@@ -3,7 +3,6 @@
 /* ----------------------------------------------- 
     TABLE OF CONTENTS
    -----------------------------------------------
-    Colors 
     General  
     Menu Modal
     Site Header
@@ -13,25 +12,9 @@
     Footer
    ----------------------------------------------- */
 
-/* ----------------------------------------------- 
-    Colors
-   ----------------------------------------------- */
-:root {
-  --xlt-base-color: #d4f1ff;
-  --lt-base-color: #c0e1f9;
-  --base-color: #a4cdf0;
-  --dropdown-nav-color: #5c111f;
-  --link-color: #1c547f;
-  --link-color-hover: #34678d;
-  --footer-link-color: #c0e1f9;
-  --lt-accent-color: #e8bfc7;
-  --accent-color: #7a1629;
-  --dk-accent-color: #450c17;
-}
-
 /* ----------------------------------------------- */
 /*	General
-  /* ----------------------------------------------- */
+/* ----------------------------------------------- */
 
 *,
 .widget_text p,
@@ -59,7 +42,7 @@
 @media (min-width: 700px) {
   h1,
   .heading-size-1 {
-    color: var(--accent-color);
+    color: #7a1629;
     font-size: 6rem;
   }
   h2,
@@ -90,7 +73,7 @@ input[type="submit"],
 :root .has-accent-background-color,
 .comment-reply-link {
   color: white;
-  background-color: var(--accent-color);
+  background-color: #7a1629;
 }
 
 /* ----------------------------------------------- */
@@ -108,13 +91,13 @@ input[type="submit"],
 .modal-menu a,
 .menu-modal .toggle,
 .menu-modal nav * {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
+  border-color: #7a1629;
+  color: #7a1629;
 }
 
 .modal-menu a:hover,
 .modal-menu a:focus {
-  color: var(--accent-color);
+  color: #7a1629;
 }
 
 /* ----------------------------------------------- */
@@ -122,7 +105,7 @@ input[type="submit"],
   /* ----------------------------------------------- */
 
 #site-header {
-  background: var(--xlt-base-color);
+  background: #d4f1ff;
   z-index: 15;
 }
 
@@ -149,18 +132,18 @@ ul.primary-menu a {
 }
 
 body:not(.overlay-header) .primary-menu ul {
-  background: var(--dropdown-nav-color);
+  background: #5c111f;
   color: white;
 }
 body:not(.overlay-header) .primary-menu > li > ul:after {
-  border-bottom-color: var(--dropdown-nav-color);
+  border-bottom-color: #5c111f;
 }
 
 body:not(.overlay-header) .primary-menu > li > a,
 body:not(.overlay-header) .primary-menu > li > .icon,
 body:not(.overlay-header) #site-header .toggle,
 body:not(.overlay-header) .toggle-inner .toggle-text {
-  color: var(--accent-color);
+  color: #7a1629;
 }
 
 /* ----------------------------------------------- */
@@ -172,7 +155,7 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
 }
 
 .singular .entry-header {
-  background: var(--base-color)
+  background: #a4cdf0
     url("https://cdn.jsdelivr.net/gh/AmyEtcetera/wcphilly2020@master/images/wcphilly2020-pattern.svg")
     top 80px left/450px 360px repeat;
   padding: 6rem 0 12rem;
@@ -229,21 +212,21 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
 
 .singular:not(.overlay-header) .entry-header a,
 .archive-header a {
-  color: var(--accent-color);
+  color: #7a1629;
 }
 
 body:not(.blog):not(.single-post) .entry-title {
   background: white;
   padding: 2rem 2rem;
 
-  -webkit-box-shadow: -8px 8px 0px 0px var(--accent-color);
-  -moz-box-shadow: -8px 8px 0px 0px var(--accent-color);
-  box-shadow: -8px 8px 0px 0px var(--accent-color);
+  -webkit-box-shadow: -8px 8px 0px 0px #7a1629;
+  -moz-box-shadow: -8px 8px 0px 0px #7a1629;
+  box-shadow: -8px 8px 0px 0px #7a1629;
 }
 
 .entry-title,
 .entry-title a {
-  color: var(--accent-color);
+  color: #7a1629;
 }
 
 /* ----------------------------------------------- */
@@ -256,7 +239,7 @@ body:not(.blog):not(.single-post) .entry-title {
 }
 
 .blog #site-header {
-  background: var(--base-color)
+  background: #a4cdf0
     url("https://cdn.jsdelivr.net/gh/AmyEtcetera/wcphilly2020@master/images/wcphilly2020-pattern.svg")
     top 80px left/450px 360px repeat;
   height: 220px;
@@ -306,9 +289,9 @@ body:not(.blog):not(.single-post) .entry-title {
   position: relative;
   z-index: 10;
 
-  -webkit-box-shadow: -8px 8px 0px 0px var(--accent-color);
-  -moz-box-shadow: -8px 8px 0px 0px var(--accent-color);
-  box-shadow: -8px 8px 0px 0px var(--accent-color);
+  -webkit-box-shadow: -8px 8px 0px 0px #7a1629;
+  -moz-box-shadow: -8px 8px 0px 0px #7a1629;
+  box-shadow: -8px 8px 0px 0px #7a1629;
 }
 @media (min-width: 700px) {
   .single-post .section-inner.medium {
@@ -319,7 +302,7 @@ body:not(.blog):not(.single-post) .entry-title {
 
 .blog .entry-title a:hover,
 .blog .entry-title a:focus {
-  color: var(--accent-color);
+  color: #7a1629;
 }
 
 .site-description,
@@ -357,7 +340,7 @@ blockquote,
 .has-drop-cap:not(:focus):first-letter,
 .wp-block-button.is-style-outline,
 .is-style-outline .wp-block-button__link:not(.has-text-color) a {
-  color: var(--link-color);
+  color: #1c547f;
 }
 
 button:not(.toggle),
@@ -373,24 +356,24 @@ input[type="submit"],
 .bg-accent-hover:focus,
 :root .has-accent-background-color,
 .comment-reply-link {
-  background-color: var(--link-color);
+  background-color: #1c547f;
 }
 
 blockquote,
 .border-color-accent,
 .border-color-accent-hover:hover,
 .border-color-accent-hover:focus {
-  border-color: var(--link-color-hover);
+  border-color: #34678d;
 }
 
 a {
-  color: var(--link-color);
+  color: #1c547f;
   font-weight: bold;
 }
 
 a:hover,
 a:focus {
-  color: var(--link-color-hover);
+  color: #34678d;
 }
 
 /* ----------------------------------------------- */
@@ -398,7 +381,7 @@ a:focus {
   /* ----------------------------------------------- */
 
 .footer-nav-widgets-wrapper {
-  background-color: var(--dk-accent-color);
+  background-color: #450c17;
   color: white;
 }
 
@@ -416,19 +399,19 @@ a:focus {
 .footer-nav-widgets-wrapper input[type="button"],
 .footer-nav-widgets-wrapper input[type="reset"],
 .footer-nav-widgets-wrapper input[type="submit"] {
-  background-color: var(--accent-color);
-  border: solid 1px var(--lt-accent-color);
+  background-color: #7a1629;
+  border: solid 1px #e8bfc7;
   color: white;
 }
 
 .footer-menu a,
 .footer-widgets a,
 .jetpack_widget_social_icons a {
-  color: var(--footer-link-color);
+  color: #c0e1f9;
 }
 
 #site-footer {
-  background-color: var(--accent-color);
+  background-color: #7a1629;
   border-color: transparent;
   color: white;
   padding: 1.5rem 0;
