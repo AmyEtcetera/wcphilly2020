@@ -403,6 +403,31 @@ input[type="submit"],
   background-color: #1c547f;
 }
 
+button:not(.toggle):hover,
+.button .faux-button:hover,
+.wp-block-button__link:hover,
+.wp-block-file .wp-block-file__button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.bg-accent:hover,
+.bg-accent-hover:hover,
+:root .has-accent-background-color:hover,
+.comment-reply-link:hover,
+button:not(.toggle):focus,
+.button .faux-button:focus,
+.wp-block-button__link:focus,
+.wp-block-file .wp-block-file__button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+.bg-accent:focus,
+.bg-accent-hover:focus,
+:root .has-accent-background-color:focus,
+.comment-reply-link:focus {
+  background-color: #2a6f9e;
+}
+
 blockquote,
 .border-color-accent,
 .border-color-accent-hover:hover,
