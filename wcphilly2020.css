@@ -178,6 +178,7 @@ ul.primary-menu a {
 body:not(.overlay-header) .primary-menu ul {
   background: #5c111f;
   color: white;
+  z-index: 15;
 }
 body:not(.overlay-header) .primary-menu > li > ul:after {
   border-bottom-color: #5c111f;
