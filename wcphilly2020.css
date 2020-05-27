@@ -352,15 +352,6 @@ body:not(.blog):not(.single) .entry-title {
 /*	Main Entry Content
 /* ----------------------------------------------- */
 
-.post-inner {
-  padding-top: 2.5rem;
-}
-@media (min-width: 700px) {
-  .post-inner {
-    padding-top: 4rem;
-  }
-}
-
 .post-inner h1,
 .post-inner h2,
 .post-inner h3,
