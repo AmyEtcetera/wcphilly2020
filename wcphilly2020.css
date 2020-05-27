@@ -51,7 +51,7 @@
   }
   h2,
   .heading-size-2 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
   h3,
   .heading-size-3 {
@@ -545,7 +545,7 @@ a:focus {
 #site-footer {
   background-color: #d4f1ff;
   border-color: transparent;
-  color: #a4cdf0;
+  color: #450c17;
   padding: 1.5rem 0;
 }
 @media (min-width: 700px) {
