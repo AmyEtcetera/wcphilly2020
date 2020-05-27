@@ -525,13 +525,34 @@ a:focus {
   color: white;
 }
 
-.footer-nav-widgets-wrapper button:not(.toggle):hover,
+.footer-nav-widgets-wrapper button:hover,
+.footer-nav-widgets-wrapper .button:hover,
+.footer-nav-widgets-wrapper .faux-button:hover,
 .footer-nav-widgets-wrapper
-  button:not(.toggle):focus
-  .search-form
-  .search-submit:focus,
-.search-form .search-submit:hover {
+  .wp-block-button:not(.is-style-outline)
+  .wp-block-button__link:hover,
+.footer-nav-widgets-wrapper .wp-block-file__button:hover,
+.footer-nav-widgets-wrapper input[type="button"]:hover,
+.footer-nav-widgets-wrapper input[type="reset"]:hover,
+.footer-nav-widgets-wrapper input[type="submit"]:hover,
+.footer-nav-widgets-wrapper button:focus,
+.footer-nav-widgets-wrapper .button:focus,
+.footer-nav-widgets-wrapper .faux-button:focus,
+.footer-nav-widgets-wrapper
+  .wp-block-button:not(.is-style-outline)
+  .wp-block-button__link:focus,
+.footer-nav-widgets-wrapper .wp-block-file__button:focus,
+.footer-nav-widgets-wrapper input[type="button"]:focus,
+.footer-nav-widgets-wrapper input[type="reset"]:focus,
+.footer-nav-widgets-wrapper input[type="submit"]:focus {
   background-color: #89283f;
+  border: solid 1px #e8bfc7;
+  color: white;
+}
+ {
+  background-color: #89283f;
+  border: solid 1px #e8bfc7;
+  color: white;
 }
 
 .footer-menu a,
@@ -548,7 +569,7 @@ a:focus {
 }
 
 #site-footer {
-  background-color: #d4f1ff;
+  background-color: #a4cdf0;
   border-color: transparent;
   color: #450c17;
   padding: 1.5rem 0;
