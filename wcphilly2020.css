@@ -427,7 +427,7 @@ blockquote,
 .is-style-outline .wp-block-button__link:not(.has-text-color):hover,
 .is-style-outline .wp-block-button__link:not(.has-text-color):focus {
   background-color: #7a1629;
-  border: none;
+  border: solid 2px white;
   color: white;
 }
 
@@ -531,7 +531,6 @@ a:focus {
   .search-submit:focus,
 .search-form .search-submit:hover {
   background-color: #89283f;
-  border: ;
 }
 
 .footer-menu a,
