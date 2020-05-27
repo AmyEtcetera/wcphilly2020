@@ -30,17 +30,8 @@
     Helvetica, sans-serif;
 }
 
-#site-header,
-.footer-nav-widgets-wrapper,
-#site-footer,
-.menu-modal,
-.menu-modal-inner,
-.search-modal-inner,
-.archive-header,
-.singular .entry-header,
-.singular .featured-media:before,
-.wp-block-pullquote:before {
-  background-color: transparent;
+.singular .featured-media:before {
+  display: none;
 }
 
 @supports (font-variation-settings: normal) {
@@ -76,7 +67,11 @@ h2 a,
 h3 a,
 h4 a,
 h5 a,
-h6 a,
+h6 a {
+  color: black;
+  text-decoration: none;
+}
+
 h2 a:hover,
 h3 a:hover,
 h4 a:hover,
@@ -88,23 +83,16 @@ h4 a:focus,
 h5 a:focus,
 h6 a:focus {
   color: black;
+  text-decoration: underline;
 }
 
-button:not(.toggle),
-.button,
-.faux-button,
-.wp-block-button__link,
-.wp-block-file .wp-block-file__button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-.bg-accent,
-.bg-accent-hover:hover,
-.bg-accent-hover:focus,
-:root .has-accent-background-color,
-.comment-reply-link {
-  color: white;
-  background-color: #7a1629;
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: black;
+  text-decoration: none;
 }
 
 button:focus,
@@ -123,16 +111,8 @@ input[type="reset"]:focus,
 input[type="reset"]:hover,
 input[type="submit"]:focus,
 input[type="submit"]:hover {
+  background-color: #2a6f9e;
   text-decoration: none !important;
-}
-
-.footer-nav-widgets-wrapper button:not(.toggle):hover,
-.footer-nav-widgets-wrapper
-  button:not(.toggle):focus
-  .search-form
-  .search-submit:focus,
-.search-form .search-submit:hover {
-  background-color: #89283f;
 }
 
 /* ----------------------------------------------- */
@@ -472,6 +452,15 @@ a:focus {
   background-color: #7a1629;
   border: solid 1px #e8bfc7;
   color: white;
+}
+
+.footer-nav-widgets-wrapper button:not(.toggle):hover,
+.footer-nav-widgets-wrapper
+  button:not(.toggle):focus
+  .search-form
+  .search-submit:focus,
+.search-form .search-submit:hover {
+  background-color: #89283f;
 }
 
 .footer-menu a,
