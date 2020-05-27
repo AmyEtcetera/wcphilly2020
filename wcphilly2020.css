@@ -460,7 +460,7 @@ input[type="submit"],
 :root .has-accent-background-color,
 .comment-reply-link {
   background-color: #7a1629;
-  border: solid 2px #450c17;
+  border: solid 2px white;
   color: white;
 }
 
