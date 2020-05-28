@@ -445,9 +445,9 @@ blockquote,
 
 .is-style-outline .wp-block-button__link:not(.has-text-color):hover,
 .is-style-outline .wp-block-button__link:not(.has-text-color):focus {
-  background-color: #c0e1f9;
+  background-color: #7a1629;
   border: solid 2px #7a1629;
-  color: #7a1629;
+  color: white;
 }
 
 button:not(.toggle),
@@ -464,7 +464,7 @@ input[type="submit"],
 :root .has-accent-background-color,
 .comment-reply-link {
   background-color: #7a1629;
-  border: solid 2px white;
+  border: solid 1px #450c17;
   color: white;
 }
 
@@ -490,9 +490,9 @@ input[type="submit"]:focus,
 .bg-accent-hover:focus,
 :root .has-accent-background-color:focus,
 .comment-reply-link:focus {
-  background-color: #a4cdf0;
-  border: solid 2px #7a1629;
-  color: #7a1629;
+  background-color: #89283f;
+  border: solid 1px #450c17;
+  color: white;
 }
 
 blockquote,
