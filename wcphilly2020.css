@@ -30,6 +30,10 @@
     Helvetica, sans-serif;
 }
 
+:focus {
+  outline-color: #34678d;
+}
+
 .singular .featured-media:before {
   display: none;
 }
