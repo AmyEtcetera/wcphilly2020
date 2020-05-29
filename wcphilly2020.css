@@ -124,7 +124,7 @@ input[type="submit"]:hover {
   bottom: 100%;
   position: absolute;
   right: 0;
-  top: 3.15rem;
+  top: 3.75rem;
   width: 6.6rem;
 }
 
@@ -634,7 +634,7 @@ input[type="submit"]:focus,
 .footer-nav-widgets-wrapper input[type="button"],
 .footer-nav-widgets-wrapper input[type="reset"],
 .footer-nav-widgets-wrapper input[type="submit"] {
-  background-color: rgba(137, 40, 63, 0.9);
+  background-color: rgba(137, 40, 63, 0.8);
   border: solid 1px #e8bfc7;
   color: white;
 }
@@ -659,7 +659,7 @@ input[type="submit"]:focus,
 .footer-nav-widgets-wrapper input[type="button"]:focus,
 .footer-nav-widgets-wrapper input[type="reset"]:focus,
 .footer-nav-widgets-wrapper input[type="submit"]:focus {
-  background-color: rgba(137, 40, 63, 0.8);
+  background-color: rgba(137, 40, 63, 0.9);
   border: solid 1px #e8bfc7;
   color: white;
 }
