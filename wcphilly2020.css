@@ -577,7 +577,7 @@ input[type="submit"]:focus,
 .bg-accent-hover:focus,
 :root .has-accent-background-color:focus,
 .comment-reply-link:focus {
-  background-color: #89283f;
+  background-color: #770223;
   border: solid 1px #450c17;
   color: white;
 }
