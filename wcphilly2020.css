@@ -3,19 +3,37 @@
 /* ----------------------------------------------- 
     TABLE OF CONTENTS
    -----------------------------------------------
+    Colors 
     General  
     Menu Modal
     Site Header
-    Entry Header
+    Entry/Singular/Archive Headers
     Blog Specific
     Main Entry Content
-    Footer
+    Footers
+    Sponsors
+   ----------------------------------------------- */
+
+/* ----------------------------------------------- 
+    Colors
+   -----------------------------------------------
+    #d4f1ff   Lightest Blue
+    #c0e1f9   Lighter Blue
+    #a4cdf0   Light Blue
+    #267cb5   Medium Blue
+    #1c547f   Dark Blue
+    #e8bfc7   Pink
+    #880228   Maroon
+    #5c111f   Dark Maroon
+    #450c17   Eggplant
+    #6d6d6d   Gray 
    ----------------------------------------------- */
 
 /* ----------------------------------------------- */
 /*	General
 /* ----------------------------------------------- */
 
+/* Fonts */
 *,
 .widget_text p,
 .widget_text ol,
@@ -30,14 +48,6 @@
     Helvetica, sans-serif;
 }
 
-:focus {
-  outline-color: #34678d;
-}
-
-.singular .featured-media:before {
-  display: none;
-}
-
 @supports (font-variation-settings: normal) {
   .widget-content cite,
   .widget-content figcaption,
@@ -47,10 +57,20 @@
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.faux-heading {
+  font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Helvetica, sans-serif;
+}
+
 @media (min-width: 700px) {
   h1,
   .heading-size-1 {
-    color: #7a1629;
     font-size: 6rem;
   }
   h2,
@@ -67,16 +87,13 @@
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.faux-heading {
-  font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-    Helvetica, sans-serif;
+/* Focus Outline for Tab Navigation */
+
+:focus {
+  outline-color: #267cb5;
 }
+
+/* Buttons - no underline on hover */
 
 button:focus,
 button:hover,
@@ -101,6 +118,8 @@ input[type="submit"]:hover {
 /*	Menu Modal
 /* ----------------------------------------------- */
 
+/* Modal Menu Toggle Position */
+
 .nav-toggle {
   bottom: 100%;
   position: absolute;
@@ -109,17 +128,21 @@ input[type="submit"]:hover {
   width: 6.6rem;
 }
 
+/* Modal Menu Colors */
+
 .modal-menu a,
 .menu-modal .toggle,
 .menu-modal nav * {
-  border-color: #7a1629;
-  color: #7a1629;
+  border-color: #880228;
+  color: #880228;
 }
 
 .modal-menu a:hover,
 .modal-menu a:focus {
-  color: #7a1629;
+  color: #880228;
 }
+
+/* Fix Bug in TwentyTwenty Menu Border for 700-1000px */
 
 @media (min-width: 700px) {
   .modal-menu ul li {
@@ -128,22 +151,26 @@ input[type="submit"]:hover {
 }
 
 /* ----------------------------------------------- */
-/*	Site Header
+/*	Site Header (Logo and Nav Menu)
 /* ----------------------------------------------- */
+
+/* Background and Padding */
 
 #site-header {
   background: #d4f1ff;
   z-index: 15;
 }
 
-.header-inner {
+#site-header .header-inner {
   padding: 3.15rem 0 1.5rem;
 }
 @media (min-width: 700px) {
-  .header-inner {
+  #site-header .header-inner {
     padding: 3.8rem 0 2rem;
   }
 }
+
+/* Logo */
 
 .site-logo img {
   max-height: 4.5rem;
@@ -154,34 +181,58 @@ input[type="submit"]:hover {
   }
 }
 
-ul.primary-menu a {
-  font-weight: 500;
+.site-description {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
 }
 
-body:not(.overlay-header) .primary-menu ul {
-  background: #5c111f;
-  color: white;
-  z-index: 15;
-}
-body:not(.overlay-header) .primary-menu > li > ul:after {
-  border-bottom-color: #5c111f;
+/* Nav Menu */
+
+ul.primary-menu a {
+  font-weight: 500;
 }
 
 body:not(.overlay-header) .primary-menu > li > a,
 body:not(.overlay-header) .primary-menu > li > .icon,
 body:not(.overlay-header) #site-header .toggle,
 body:not(.overlay-header) .toggle-inner .toggle-text {
-  color: #7a1629;
+  color: #880228;
+}
+
+/* Nav Submenu Dropdown */
+
+body:not(.overlay-header) .primary-menu ul {
+  background: #5c111f;
+  color: white;
+  z-index: 15;
+}
+
+/* Dropdown Top Arrow Color */
+
+body:not(.overlay-header) .primary-menu > li > ul:after {
+  border-bottom-color: #5c111f;
 }
 
 /* ----------------------------------------------- */
-/*	Entry Header
+/*	Entry/Singular/Archive Headers
 /* ----------------------------------------------- */
+
+/* Page/Post Title Containers
+   archive = search results and category listings */
+
+/* Must be position relative to align gradient and wave */
 
 .entry-header,
 .archive-header {
   position: relative;
 }
+
+/* Background Pattern */
 
 .singular .entry-header,
 .archive-header {
@@ -197,11 +248,7 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
   }
 }
 
-.archive-header a,
-.header-footer-group .color-accent,
-.header-footer-group .color-accent-hover:hover {
-  color: #7a1629;
-}
+/* Gradient Mask */
 
 .entry-header:before,
 .archive-header:before {
@@ -220,6 +267,8 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
   z-index: 0;
 }
 
+/* Wave */
+
 .entry-header:after,
 .archive-header:after {
   background: url("https://cdn.jsdelivr.net/gh/AmyEtcetera/wcphilly2020@master/images/wave.svg")
@@ -237,26 +286,27 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
   z-index: 1;
 }
 
-body:not(.blog):not(.search-results) .section-inner.medium,
-.archive-header .section-inner.medium {
+/* Title Box */
+
+/* Title Width */
+
+.singular .entry-header-inner.section-inner.medium,
+.archive-header-inner.section-inner.medium {
   max-width: 40rem;
   position: relative;
   z-index: 10;
 }
 @media (min-width: 700px) {
-  body:not(.blog):not(.search-results) .section-inner.medium,
-  .archive-header .section-inner.medium {
+  .singular .entry-header-inner.section-inner.medium,
+  .archive-header-inner.section-inner.medium {
     max-width: 65rem;
   }
 }
 
-.singular:not(.overlay-header) .entry-header a,
-.archive-header a {
-  color: #7a1629;
-}
+/* Title Container */
 
-body:not(.blog):not(.search-results):not(.single) .entry-title,
-.archive-header .section-inner.medium {
+.singular .entry-header-inner.section-inner.medium,
+.archive-header-inner.section-inner.medium.section-inner.medium {
   background: white;
   padding: 2rem 2rem;
 
@@ -265,6 +315,8 @@ body:not(.blog):not(.search-results):not(.single) .entry-title,
   box-shadow: -8px 8px 0px 0px #7a1629;
 }
 
+/* Title Colors */
+
 .entry-title,
 .entry-title a,
 .entry-title a:hover,
@@ -272,23 +324,32 @@ body:not(.blog):not(.search-results):not(.single) .entry-title,
 .archive-title,
 .archive-title a,
 .archive-title a:hover,
-.archive-title a:focus {
-  color: #7a1629;
+.archive-title a:focus,
+.singular:not(.overlay-header) .entry-header a,
+.archive-header a,
+.header-footer-group .color-accent,
+.header-footer-group .color-accent-hover:hover {
+  color: #880228;
 }
 
-.search-results .entry-header:before,
-.search-results .entry-header:after {
+.entry-categories,
+.entry-categories a,
+.entry-categories a:hover {
+  color: #6d6d6d;
+}
+
+/* Hide Gradient and Wave on Lists of Posts/Pages */
+
+.archive .entry-header:before,
+.archive .entry-header:after {
   display: none;
 }
 
 /* ----------------------------------------------- */
-/*	Blog Specific
+/*	Blog Specific 
 /* ----------------------------------------------- */
 
-.blog .entry-header:before,
-.blog .entry-header:after {
-  display: none;
-}
+/* Site Header Pattern (instead of in entry header) */
 
 .blog #site-header {
   background: #a4cdf0
@@ -301,6 +362,8 @@ body:not(.blog):not(.search-results):not(.single) .entry-title,
     height: 300px;
   }
 }
+
+/* Gradient Mask */
 
 .blog #site-header:before {
   background: url("https://cdn.jsdelivr.net/gh/AmyEtcetera/wcphilly2020@master/images/gradient-mask-blog.svg")
@@ -318,6 +381,8 @@ body:not(.blog):not(.search-results):not(.single) .entry-title,
   z-index: -1;
 }
 
+/* Wave */
+
 .blog #site-header:after {
   background: url("https://cdn.jsdelivr.net/gh/AmyEtcetera/wcphilly2020@master/images/wave.svg")
     bottom center/100% no-repeat;
@@ -334,30 +399,15 @@ body:not(.blog):not(.search-results):not(.single) .entry-title,
   z-index: 1;
 }
 
-.single .section-inner.medium {
-  background: white;
-  max-width: 75rem;
-  padding: 3rem 3rem;
-  position: relative;
-  z-index: 10;
+/* Hide Gradient and Wave on Individual Post Titles in List */
 
-  -webkit-box-shadow: -8px 8px 0px 0px #7a1629;
-  -moz-box-shadow: -8px 8px 0px 0px #7a1629;
-  box-shadow: -8px 8px 0px 0px #7a1629;
-}
-@media (min-width: 700px) {
-  .single-post .section-inner.medium {
-    max-width: 85rem;
-    padding: 5rem 5rem;
-  }
+.blog .entry-header:before,
+.blog .entry-header:after {
+  display: none;
 }
 
-.blog .entry-title a:hover,
-.blog .entry-title a:focus {
-  color: #7a1629;
-}
+/* Post Meta - Author, Date, Etc. */
 
-.site-description,
 .widget .post-date,
 .widget .rss-date,
 .widget_archive li,
@@ -380,6 +430,8 @@ body:not(.blog):not(.search-results):not(.single) .entry-title,
 /*	Main Entry Content
 /* ----------------------------------------------- */
 
+/* Header Colors */
+
 .post-inner h1,
 .post-inner h2,
 .post-inner h3,
@@ -394,7 +446,7 @@ body:not(.blog):not(.search-results):not(.single) .entry-title,
 .post-inner h5 a,
 .post-inner h6 a,
 .post-inner .faux-heading a {
-  color: #7a1629;
+  color: #880228;
   text-decoration: none;
 }
 
@@ -416,6 +468,8 @@ body:not(.blog):not(.search-results):not(.single) .entry-title,
   text-decoration: underline;
 }
 
+/* Featured Image */
+
 .singular .featured-media {
   margin-top: 3rem;
 }
@@ -424,6 +478,20 @@ body:not(.blog):not(.search-results):not(.single) .entry-title,
     margin-top: 3rem;
   }
 }
+
+/* Links */
+
+a {
+  color: #1c547f;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  color: #267cb5;
+}
+
+/* Blockquotes and Drop Caps */
 
 .wp-block-pullquote:before,
 blockquote,
@@ -438,17 +506,36 @@ blockquote,
   color: #1c547f;
 }
 
+blockquote,
+.border-color-accent,
+.border-color-accent-hover:hover,
+.border-color-accent-hover:focus {
+  border-color: #1c547f;
+}
+
+/* Background Color Applied within Post */
+
+.post-inner .has-background-color {
+  border-radius: 2rem;
+}
+
+/* Buttons */
+
+/* Outline Only Buttons */
+
 .wp-block-button.is-style-outline,
 .is-style-outline .wp-block-button__link:not(.has-text-color) a {
-  color: #7a1629;
+  color: #880228;
 }
 
 .is-style-outline .wp-block-button__link:not(.has-text-color):hover,
 .is-style-outline .wp-block-button__link:not(.has-text-color):focus {
-  background-color: #7a1629;
-  border: solid 2px #7a1629;
+  background-color: #880228;
+  border: solid 2px #880228;
   color: white;
 }
+
+/* Solid Buttons */
 
 button:not(.toggle),
 .button,
@@ -463,7 +550,7 @@ input[type="submit"],
 .bg-accent-hover:focus,
 :root .has-accent-background-color,
 .comment-reply-link {
-  background-color: #7a1629;
+  background-color: #880228;
   border: solid 1px #450c17;
   color: white;
 }
@@ -495,26 +582,11 @@ input[type="submit"]:focus,
   color: white;
 }
 
-blockquote,
-.border-color-accent,
-.border-color-accent-hover:hover,
-.border-color-accent-hover:focus {
-  border-color: #34678d;
-}
-
-a {
-  color: #1c547f;
-  font-weight: bold;
-}
-
-a:hover,
-a:focus {
-  color: #34678d;
-}
-
 /* ----------------------------------------------- */
-/*	Footer
+/*	Footers
 /* ----------------------------------------------- */
+
+/* Top Footer */
 
 .footer-nav-widgets-wrapper {
   background-color: #450c17;
@@ -530,6 +602,8 @@ a:focus {
   }
 }
 
+/* Increase Spacing Between Widgets */
+
 .footer-widgets .widget {
   margin-top: 5rem;
 }
@@ -541,6 +615,15 @@ a:focus {
   }
 }
 
+/* Footer Links */
+
+.footer-menu a,
+.footer-widgets a {
+  color: #c0e1f9;
+}
+
+/* Footer Buttons */
+
 .footer-nav-widgets-wrapper button,
 .footer-nav-widgets-wrapper .button,
 .footer-nav-widgets-wrapper .faux-button,
@@ -551,7 +634,7 @@ a:focus {
 .footer-nav-widgets-wrapper input[type="button"],
 .footer-nav-widgets-wrapper input[type="reset"],
 .footer-nav-widgets-wrapper input[type="submit"] {
-  background-color: #7a1629;
+  background-color: rgba(137, 40, 63, 0.9);
   border: solid 1px #e8bfc7;
   color: white;
 }
@@ -576,24 +659,23 @@ a:focus {
 .footer-nav-widgets-wrapper input[type="button"]:focus,
 .footer-nav-widgets-wrapper input[type="reset"]:focus,
 .footer-nav-widgets-wrapper input[type="submit"]:focus {
-  background-color: #89283f;
+  background-color: rgba(137, 40, 63, 0.8);
   border: solid 1px #e8bfc7;
   color: white;
 }
 
-.footer-menu a,
-.footer-widgets a {
-  color: #c0e1f9;
-}
+/* Social Media Icons (FontAwesome) */
 
 .footer-widgets i.fa:hover {
   color: #a4cdf0;
 }
 
+/* Bottom Footer (Copyright/Powered By WordPress) */
+
 #site-footer {
-  background-color: #a4cdf0;
-  border-color: transparent;
-  color: #450c17;
+  background-color: #82263b;
+  border-color: trasnparent;
+  color: white;
   padding: 1.5rem 0;
 }
 @media (min-width: 700px) {
@@ -603,7 +685,7 @@ a:focus {
 }
 
 #site-footer a {
-  color: #450c17;
+  color: white;
 }
 
 .powered-by-wordpress a,
