@@ -124,7 +124,7 @@ input[type="submit"]:hover {
   bottom: 100%;
   position: absolute;
   right: 0;
-  top: 3.75rem;
+  top: 4.75rem;
   width: 6.6rem;
 }
 
@@ -230,6 +230,12 @@ body:not(.overlay-header) .primary-menu > li > ul:after {
 .entry-header,
 .archive-header {
   position: relative;
+}
+
+/* Hide default background color on Featured Media */
+
+.singular .featured-media:before {
+  display: none;
 }
 
 /* Background Pattern */
