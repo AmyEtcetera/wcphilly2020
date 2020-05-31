@@ -10,8 +10,9 @@
     Entry/Singular/Archive Headers
     Blog Specific
     Main Entry Content
-    Footers
+    Organizers/Attendees
     Sponsors
+    Footers
    ----------------------------------------------- */
 
 /* ----------------------------------------------- 
@@ -192,6 +193,10 @@ input[type="submit"]:hover {
 }
 
 /* Nav Menu */
+
+ul.primary-menu {
+  font-size: 2rem;
+}
 
 ul.primary-menu a {
   font-weight: 500;
@@ -589,6 +594,64 @@ input[type="submit"]:focus,
 }
 
 /* ----------------------------------------------- */
+/*	Organizers/Attendees
+/* ----------------------------------------------- */
+
+ul.wordcamp-organizers img,
+ul.tix-attendee-list img {
+  border-radius: 50%;
+}
+
+/* ----------------------------------------------- */
+/*	Sponsors
+/* ----------------------------------------------- */
+
+.wcb_sponsor-template-default.single .post-meta-wrapper {
+  display: none;
+}
+
+.wcb_widget_sponsors .sponsor-logo img {
+  margin: 0 auto;
+  max-height: 80px !important;
+}
+
+.sponsor-level {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sponsor-level a.sponsor-logo {
+  align-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  display: flex;
+  max-height: 90px;
+  max-width: 47%;
+  min-width: 47%;
+  margin-bottom: 20px;
+  padding: 10px;
+
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sponsor-level a.sponsor-logo:hover,
+.sponsor-level a.sponsor-logo:focus {
+  opacity: 0.9;
+}
+
+.sponsor-level-title {
+  flex-basis: 100%;
+}
+
+.sponsor-level.silver .sponsor-level-title,
+.sponsor-level.bronze .sponsor-level-title {
+  margin-top: 2rem;
+}
+
+/* ----------------------------------------------- */
 /*	Footers
 /* ----------------------------------------------- */
 
@@ -697,53 +760,4 @@ input[type="submit"]:focus,
 .powered-by-wordpress a,
 a.to-the-top {
   font-weight: normal;
-}
-
-/* ----------------------------------------------- */
-/*	Sponsors
-/* ----------------------------------------------- */
-
-.wcb_sponsor-template-default.single .post-meta-wrapper {
-  display: none;
-}
-
-.wcb_widget_sponsors .sponsor-logo img {
-  margin: 0 auto;
-  max-height: 80px !important;
-}
-
-.sponsor-level {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.sponsor-level a.sponsor-logo {
-  align-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 1.5rem;
-  display: flex;
-  max-height: 90px;
-  max-width: 47%;
-  min-width: 47%;
-  margin-bottom: 20px;
-  padding: 10px;
-
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.sponsor-level a.sponsor-logo:hover,
-.sponsor-level a.sponsor-logo:focus {
-  opacity: 0.9;
-}
-
-.sponsor-level-title {
-  flex-basis: 100%;
-}
-
-.sponsor-level.silver .sponsor-level-title,
-.sponsor-level.bronze .sponsor-level-title {
-  margin-top: 2rem;
 }
