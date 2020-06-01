@@ -282,7 +282,7 @@ body:not(.overlay-header) .primary-menu > li > ul:after {
 
 .entry-header:after,
 .archive-header:after {
-  background: url("https://cdn.jsdelivr.net/gh/AmyEtcetera/wcphilly2020@master/images/wave.svg")
+  background: url("https://cdn.jsdelivr.net/gh/AmyEtcetera/wcphilly2020@master/images/wave-border.svg")
     bottom center/100% no-repeat;
   bottom: 0;
   left: 0;
@@ -395,7 +395,7 @@ body:not(.overlay-header) .primary-menu > li > ul:after {
 /* Wave */
 
 .blog #site-header:after {
-  background: url("https://cdn.jsdelivr.net/gh/AmyEtcetera/wcphilly2020@master/images/wave.svg")
+  background: url("https://cdn.jsdelivr.net/gh/AmyEtcetera/wcphilly2020@master/images/wave-border.svg")
     bottom center/100% no-repeat;
   bottom: 0;
   left: 0;
