@@ -24,8 +24,8 @@
     #267cb5   Medium Blue
     #1c547f   Dark Blue
     #e8bfc7   Pink
-    #880228   Maroon
-    #5c111f   Dark Maroon
+    #930635   Maroon
+    #770f31   Dark Maroon
     #450c17   Eggplant
     #6d6d6d   Gray 
    ----------------------------------------------- */
@@ -134,13 +134,13 @@ input[type="submit"]:hover {
 .modal-menu a,
 .menu-modal .toggle,
 .menu-modal nav * {
-  border-color: #880228;
-  color: #880228;
+  border-color: #930635;
+  color: #930635;
 }
 
 .modal-menu a:hover,
 .modal-menu a:focus {
-  color: #880228;
+  color: #930635;
 }
 
 /* Fix Bug in TwentyTwenty Menu Border for 700-1000px */
@@ -206,13 +206,13 @@ body:not(.overlay-header) .primary-menu > li > a,
 body:not(.overlay-header) .primary-menu > li > .icon,
 body:not(.overlay-header) #site-header .toggle,
 body:not(.overlay-header) .toggle-inner .toggle-text {
-  color: #880228;
+  color: #930635;
 }
 
 /* Nav Submenu Dropdown */
 
 body:not(.overlay-header) .primary-menu ul {
-  background: #5c111f;
+  background: #770f31;
   color: white;
   z-index: 15;
 }
@@ -220,7 +220,7 @@ body:not(.overlay-header) .primary-menu ul {
 /* Dropdown Top Arrow Color */
 
 body:not(.overlay-header) .primary-menu > li > ul:after {
-  border-bottom-color: #5c111f;
+  border-bottom-color: #770f31;
 }
 
 /* ----------------------------------------------- */
@@ -321,9 +321,9 @@ body:not(.overlay-header) .primary-menu > li > ul:after {
   background: white;
   padding: 2rem 2rem;
 
-  -webkit-box-shadow: -8px 8px 0px 0px #7a1629;
-  -moz-box-shadow: -8px 8px 0px 0px #7a1629;
-  box-shadow: -8px 8px 0px 0px #7a1629;
+  -webkit-box-shadow: -8px 8px 0px 0px #930635;
+  -moz-box-shadow: -8px 8px 0px 0px #930635;
+  box-shadow: -8px 8px 0px 0px #930635;
 }
 
 /* Title Colors */
@@ -340,7 +340,7 @@ body:not(.overlay-header) .primary-menu > li > ul:after {
 .archive-header a,
 .header-footer-group .color-accent,
 .header-footer-group .color-accent-hover:hover {
-  color: #880228;
+  color: #930635;
 }
 
 .entry-categories,
@@ -457,7 +457,7 @@ body:not(.overlay-header) .primary-menu > li > ul:after {
 .post-inner h5 a,
 .post-inner h6 a,
 .post-inner .faux-heading a {
-  color: #880228;
+  color: #930635;
   text-decoration: none;
 }
 
@@ -536,13 +536,13 @@ blockquote,
 
 .wp-block-button.is-style-outline,
 .is-style-outline .wp-block-button__link:not(.has-text-color) a {
-  color: #880228;
+  color: #930635;
 }
 
 .is-style-outline .wp-block-button__link:not(.has-text-color):hover,
 .is-style-outline .wp-block-button__link:not(.has-text-color):focus {
-  background-color: #880228;
-  border: solid 2px #880228;
+  background-color: #930635;
+  border: solid 2px #930635;
   color: white;
 }
 
@@ -561,7 +561,7 @@ input[type="submit"],
 .bg-accent-hover:focus,
 :root .has-accent-background-color,
 .comment-reply-link {
-  background-color: #880228;
+  background-color: #930635;
   border: solid 1px #450c17;
   color: white;
 }
