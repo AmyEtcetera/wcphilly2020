@@ -4,6 +4,10 @@
 	 viewBox="0 0 1280 369.2" style="enable-background:new 0 0 1280 369.2;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#880228;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#880228;stroke-miterlimit:10;}
 </style>
-<path class="st0" d="M0,332.9c0,0,0,9.9,0,36.3h1280.5v-62.5C720.3,450.2,640,245.7,0,332.9z"/>
+<path class="st0" d="M0,313.2c0,0,0,29.6,0,56h1280V287C719.8,430.5,640,226,0,313.2z"/>
+<path class="st1" d="M1280,287C719.8,430.5,640,226,0,313.2"/>
+<path class="st2" d="M1280,293.7C684.8,450.9,670.6,222.3,0,323.9"/>
 </svg>
