@@ -478,8 +478,8 @@ body:not(.overlay-header) .primary-menu > li > ul:after {
 /* Increase Width */
 .entry-content
   > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-  max-width: 87rem;
-  width: calc(100% - 4rem);
+  max-width: 75rem;
+  width: calc(100% - 8rem);
 }
 
 /* Header Colors */
