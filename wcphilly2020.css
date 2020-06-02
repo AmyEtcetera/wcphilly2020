@@ -144,7 +144,7 @@ input[type="submit"]:hover {
   [class*="wp-block"]:not(.alignwide):not(.alignfull)
     [class*="__inner-container"]
     > .wp-block-image
-    .alignleft {
+    .alignright {
     margin-left: 1em;
   }
 }
