@@ -451,6 +451,13 @@ body:not(.overlay-header) .primary-menu > li > ul:after {
   display: none;
 }
 
+/* Hide featured media */
+
+.blog .featured-media,
+.single-post .featured-media {
+  display: none;
+}
+
 /* Post Meta - Author, Date, Etc. */
 
 .widget .post-date,
