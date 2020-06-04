@@ -208,11 +208,11 @@ input[type="submit"]:hover {
 /* Logo */
 
 .site-logo img {
-  max-height: 4.5rem;
+  max-height: 5rem;
 }
 @media (min-width: 700px) {
   .site-logo img {
-    max-height: 5.5rem;
+    max-height: 6rem;
   }
 }
 
@@ -483,6 +483,7 @@ body:not(.overlay-header) .primary-menu > li > ul:after {
 /* ----------------------------------------------- */
 
 /* Increase Width */
+
 .entry-content
   > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
   max-width: 75rem;
@@ -494,6 +495,7 @@ body:not(.overlay-header) .primary-menu > li > ul:after {
 }
 
 /* Decrease List Width */
+
 .entry-content > ul,
 .entry-content > ol {
   width: calc(100% - 10rem) !important;
