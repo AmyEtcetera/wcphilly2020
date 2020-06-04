@@ -496,7 +496,7 @@ body:not(.overlay-header) .primary-menu > li > ul:after {
 /* Decrease List Width */
 .entry-content > ul,
 .entry-content > ol {
-  width: calc(100% - 12rem);
+  width: calc(100% - 10rem) !important;
 }
 
 /* Header Colors */
