@@ -159,7 +159,7 @@ input[type="submit"]:hover {
   bottom: 100%;
   position: absolute;
   right: 0;
-  top: 4.75rem;
+  top: 4.2rem;
   width: 6.6rem;
 }
 
@@ -491,6 +491,12 @@ body:not(.overlay-header) .primary-menu > li > ul:after {
 [class*="__inner-container"]
   > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
   max-width: 75rem;
+}
+
+/* Decrease List Width */
+.entry-content > ul,
+.entry-content > ol {
+  width: calc(100% - 12rem);
 }
 
 /* Header Colors */
