@@ -453,6 +453,7 @@ body:not(.overlay-header) .primary-menu > li > ul:after {
 
 /* Hide featured media */
 
+.home .featured-media,
 .blog .featured-media,
 .single-post .featured-media {
   display: none;
