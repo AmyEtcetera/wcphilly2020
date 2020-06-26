@@ -5,13 +5,14 @@
    -----------------------------------------------
     Colors 
     General  
-    Menu Modal
+    Modal Menu
     Site Header
     Entry/Singular/Archive Headers
     Blog Specific
     Main Entry Content
     Organizers/Attendees
-    Speakers/Sessions
+    Speakers
+    Sessions
     Sponsors
     Forms
     Footers
@@ -154,14 +155,6 @@ input[type="submit"]:hover {
 /* ----------------------------------------------- */
 /*	Modal Menu
 /* ----------------------------------------------- */
-
-/* Modal Menu Toggle Position */
-
-.nav-toggle {
-  bottom: 100%;
-  position: absolute;
-  top: 4.2rem;
-}
 
 /* Modal Menu Colors */
 
