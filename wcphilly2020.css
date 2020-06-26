@@ -672,17 +672,20 @@ input[type="submit"]:focus,
 /*	Organizers/Attendees
 /* ----------------------------------------------- */
 
+/* Make speaker and organizer images circular */
+
 ul.wordcamp-organizers img,
 ul.tix-attendee-list img {
   border-radius: 50%;
 }
 
 /* ----------------------------------------------- */
-/*	Speakers/Sessions
+/*	Speakers
 /* ----------------------------------------------- */
 
 /* Hide date on speaker bios */
-.wcb_speaker-template-default .speakers .post-date.meta-wrapper {
+
+.wcb_speaker-template-default .post-date.meta-wrapper {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   position: absolute;
@@ -690,9 +693,31 @@ ul.tix-attendee-list img {
   width: 1px;
 }
 
+/* ----------------------------------------------- */
+/*	Sessions
+/* ----------------------------------------------- */
+
 /* Hide session header metadata */
+
 .wcb_session-template-default .post-meta-wrapper {
   display: none;
+}
+
+/* Title Width */
+
+.wcb_session-template-default
+  .singular
+  .entry-header-inner.section-inner.medium {
+  max-width: 55rem;
+  position: relative;
+  z-index: 10;
+}
+@media (min-width: 700px) {
+  .wcb_session-template-default
+    .singular
+    .entry-header-inner.section-inner.medium {
+    max-width: 80rem;
+  }
 }
 
 /* ----------------------------------------------- */
@@ -745,7 +770,7 @@ ul.tix-attendee-list img {
 }
 
 /* ----------------------------------------------- */
-/*	Footers
+/*	Forms
 /* ----------------------------------------------- */
 
 /* Form disabled until WordPress.org login message */
