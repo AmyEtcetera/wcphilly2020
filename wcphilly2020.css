@@ -705,17 +705,13 @@ ul.tix-attendee-list img {
 
 /* Title Width */
 
-.wcb_session-template-default
-  .singular
-  .entry-header-inner.section-inner.medium {
+.wcb_session-template-default .entry-header-inner.section-inner.medium {
   max-width: 55rem;
   position: relative;
   z-index: 10;
 }
 @media (min-width: 700px) {
-  .wcb_session-template-default
-    .singular
-    .entry-header-inner.section-inner.medium {
+  .wcb_session-template-default .entry-header-inner.section-inner.medium {
     max-width: 80rem;
   }
 }
