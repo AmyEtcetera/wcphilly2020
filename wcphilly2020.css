@@ -248,10 +248,13 @@ body:not(.overlay-header) .primary-menu ul {
   z-index: 15;
 }
 
-/* Dropdown Top Arrow Color */
+/* Dropdown Arrow Color */
 
 body:not(.overlay-header) .primary-menu > li > ul:after {
   border-bottom-color: #770f31;
+}
+body:not(.overlay-header) .primary-menu ul ul:after {
+  border-left-color: #770f31;
 }
 
 /* ----------------------------------------------- */
@@ -662,19 +665,25 @@ input[type="submit"]:focus,
 }
 
 /* ----------------------------------------------- */
-/*	Organizers/Attendees
+/*	Avatars
 /* ----------------------------------------------- */
 
-/* Make speaker and organizer images circular */
+/* Make attendee/speaker/organizer images circular */
 
 ul.wordcamp-organizers img,
-ul.tix-attendee-list img {
+ul.tix-attendee-list img,
+.wordcamp-image__avatar-container img,
+.speaker-avatar img {
   border-radius: 50%;
 }
 
 /* ----------------------------------------------- */
 /*	Speakers
 /* ----------------------------------------------- */
+
+/****************************
+ * Individual speaker pages
+ ****************************/
 
 /* Hide date on speaker bios */
 
@@ -684,6 +693,33 @@ ul.tix-attendee-list img {
   position: absolute;
   overflow: hidden;
   width: 1px;
+}
+
+/* Left align avatar image */
+
+.wcb_speaker-template-default .speaker-avatar img {
+  float: left;
+  margin-right: 1em;
+}
+
+/* Fix left margins on list of sessions */
+
+#speaker-session-names {
+  margin-left: auto;
+}
+#speaker-session-names li {
+  margin-left: 0;
+}
+
+/*****************
+ * Speakers List
+ *****************/
+
+/* Left align avatar image */
+
+.wordcamp-image__avatar-container {
+  float: left;
+  margin-right: 1em;
 }
 
 /* ----------------------------------------------- */
@@ -707,6 +743,15 @@ ul.tix-attendee-list img {
   .wcb_session-template-default .entry-header-inner.section-inner.medium {
     max-width: 80rem;
   }
+}
+
+/* Fix left margins on list of speakers */
+
+#session-speaker-names {
+  margin-left: auto;
+}
+#session-speaker-names li {
+  margin-left: 0;
 }
 
 /* ----------------------------------------------- */
