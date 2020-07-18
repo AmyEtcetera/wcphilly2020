@@ -805,18 +805,35 @@ ul.tix-attendee-list img,
 /* ----------------------------------------------- */
 
 /* Remove top padding on table since no intro text */
+
 body.admin-bar #tix {
   padding-top: 0;
 }
 
 /* Make description column title bold like other headers */
+
 .tix-tickets-list thead .tix-column-description {
   font-weight: 700;
 }
 
 /* Increase price column width */
+
 .tix-column-price {
   width: 100px;
+}
+
+/* Remove padding above Ticket Checkout Form h2 */
+
+#tix_checkout_form h2:first-of-type {
+  margin-top: 0;
+}
+
+/* Undo Camptix styling on checkout form submit button */
+
+#tix .tix-submit .tix-checkout-button {
+  padding: 1.1em 1.44em;
+  border: solid 1px #450c17;
+  border-radius: 0.5em;
 }
 
 /* ----------------------------------------------- */
