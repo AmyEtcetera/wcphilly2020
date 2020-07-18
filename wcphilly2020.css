@@ -808,19 +808,21 @@ ul.tix-attendee-list img,
 /*	Tickets
 /* ----------------------------------------------- */
 
-#tix {
+/* Remove top padding on table since no intro text */
+body.admin-bar #tix {
   padding-top: 0;
 }
 
-th.tix-column-description {
+/* Make description column title bold like other headers */
+.tix-tickets-list thead .tix-column-description {
   font-weight: 700;
 }
 
+/* Increase price column width */
 .tix-column-price {
   width: 100px;
 }
 
-/* Form disabled until WordPress.org login message */
 /* ----------------------------------------------- */
 /*	Forms
 /* ----------------------------------------------- */
