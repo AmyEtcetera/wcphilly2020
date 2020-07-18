@@ -304,13 +304,12 @@ body:not(.overlay-header) .primary-menu ul ul:after {
 .archive-header:before {
   background: url("https://cdn.jsdelivr.net/gh/AmyEtcetera/wcphilly2020@master/images/gradient-mask.svg")
     top left/100% no-repeat;
-  top: 0;
+  top: -14px;
   left: 0;
   right: 0;
   content: "";
   display: block;
   height: 100%;
-  margin-top: -2px;
   pointer-events: none;
   position: absolute;
   width: 100%;
@@ -670,7 +669,7 @@ input[type="submit"]:focus,
 }
 
 /* ----------------------------------------------- */
-/*	Avatars
+/*	Organizers/Attendees
 /* ----------------------------------------------- */
 
 /* Make attendee/speaker/organizer images circular */
@@ -680,6 +679,35 @@ ul.tix-attendee-list img,
 .wordcamp-image__avatar-container img,
 .speaker-avatar img {
   border-radius: 50%;
+}
+
+/* Layout of avatars and info */
+
+ul#tix-attendees li {
+  height: 100%;
+  text-align: center;
+}
+
+#tix-attendees .avatar {
+  float: none;
+  height: auto;
+  max-width: 150px;
+  width: 80%;
+}
+
+#tix-attendees .tix-field {
+  margin-left: 0;
+}
+
+/* Switch to two columns on smaller screen */
+
+#tix-attendees .tix-columns-3 li {
+  width: 46%;
+}
+@media (min-width: 700px) {
+  #tix-attendees .tix-columns-3 li {
+    width: 33.333%;
+  }
 }
 
 /* ----------------------------------------------- */
