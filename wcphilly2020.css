@@ -681,11 +681,12 @@ ul.tix-attendee-list img,
   border-radius: 50%;
 }
 
-/* Layout of avatars and info */
+/* Layout of attendee avatars and info */
 
 #tix-attendees ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #tix-attendees li {
@@ -706,10 +707,14 @@ ul.tix-attendee-list img,
   margin-left: 0;
 }
 
+#tix-attendees .tix-attendee-name {
+  font-weight: 700;
+}
+
 /* Switch to two columns on smaller screen */
 
 #tix-attendees .tix-columns-3 li {
-  width: 46%;
+  width: 45%;
 }
 @media (min-width: 700px) {
   #tix-attendees .tix-columns-3 li {
