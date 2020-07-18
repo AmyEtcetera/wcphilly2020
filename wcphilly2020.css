@@ -177,6 +177,10 @@ input[type="submit"]:hover {
   .modal-menu ul li {
     border-left-width: 0;
   }
+
+  .modal-menu ul li a {
+    font-size: 2rem;
+  }
 }
 
 /* ----------------------------------------------- */
@@ -221,10 +225,6 @@ input[type="submit"]:hover {
 }
 
 /* Nav Menu */
-
-ul.primary-menu {
-  font-size: 2rem;
-}
 
 ul.primary-menu a {
   font-weight: 500;
