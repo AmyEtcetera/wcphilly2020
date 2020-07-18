@@ -683,7 +683,7 @@ ul.tix-attendee-list img,
 
 /* Layout of avatars and info */
 
-ul#tix-attendees li {
+#tix-attendees li {
   height: 100%;
   text-align: center;
 }
