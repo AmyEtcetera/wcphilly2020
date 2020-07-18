@@ -177,10 +177,6 @@ input[type="submit"]:hover {
   .modal-menu ul li {
     border-left-width: 0;
   }
-
-  .modal-menu ul li a {
-    font-size: 2rem;
-  }
 }
 
 /* ----------------------------------------------- */
