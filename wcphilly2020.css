@@ -14,6 +14,7 @@
     Speakers
     Sessions
     Sponsors
+    Tickets
     Forms
     Footers
    ----------------------------------------------- */
@@ -803,6 +804,23 @@ ul.tix-attendee-list img,
   margin-top: 2rem;
 }
 
+/* ----------------------------------------------- */
+/*	Tickets
+/* ----------------------------------------------- */
+
+#tix {
+  padding-top: 0;
+}
+
+.tix-tickets-list .tix-column-description {
+  font-weight: 700;
+}
+
+.tix-column-price {
+  width: 100px;
+}
+
+/* Form disabled until WordPress.org login message */
 /* ----------------------------------------------- */
 /*	Forms
 /* ----------------------------------------------- */
