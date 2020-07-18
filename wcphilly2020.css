@@ -686,7 +686,6 @@ ul.tix-attendee-list img,
 #tix-attendees ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 #tix-attendees li {
