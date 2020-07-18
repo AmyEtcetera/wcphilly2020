@@ -290,6 +290,14 @@ body:not(.overlay-header) .primary-menu ul ul:after {
   }
 }
 
+/* Prevent title overlapping curvy edge on ultra-wide screens */
+
+@media (min-width: 3000px) {
+  .singular .entry-header {
+    padding: 6rem 0 24rem;
+  }
+}
+
 /* Gradient Mask */
 
 .entry-header:before,
