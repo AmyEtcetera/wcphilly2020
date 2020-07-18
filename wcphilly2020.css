@@ -683,8 +683,14 @@ ul.tix-attendee-list img,
 
 /* Layout of avatars and info */
 
+#tix-attendees ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #tix-attendees li {
   height: 100%;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -692,10 +698,11 @@ ul.tix-attendee-list img,
   float: none;
   height: auto;
   max-width: 150px;
-  width: 80%;
+  width: 100%;
 }
 
 #tix-attendees .tix-field {
+  font-size: 1.6rem;
   margin-left: 0;
 }
 
@@ -706,7 +713,7 @@ ul.tix-attendee-list img,
 }
 @media (min-width: 700px) {
   #tix-attendees .tix-columns-3 li {
-    width: 33.333%;
+    width: 30%;
   }
 }
 
