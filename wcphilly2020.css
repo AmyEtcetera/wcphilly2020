@@ -812,7 +812,7 @@ ul.tix-attendee-list img,
   padding-top: 0;
 }
 
-.tix-tickets-list .tix-column-description {
+th.tix-column-description {
   font-weight: 700;
 }
 
