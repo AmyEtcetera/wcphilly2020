@@ -101,7 +101,7 @@ h6,
 .primary-menu .sub-menu *:focus,
 .footer-nav-widgets-wrapper *:focus,
 #site-footer *:focus {
-  outline: 3px solid #d4f1ff;
+  outline: 2px solid white;
 }
 
 /* Buttons - no underline on hover */
