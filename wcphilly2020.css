@@ -95,11 +95,12 @@ h6,
 /* Focus Outline for Tab Navigation */
 
 :focus {
-  outline: 2px solid #267cb5;
+  outline: 3px solid #267cb5;
 }
 
-.footer-nav-widgets :focus,
-#site-footer :focus {
+#site-header *:focus,
+.footer-nav-widgets *:focus,
+#site-footer *:focus {
   outline: 2px solid #d4f1ff;
 }
 
