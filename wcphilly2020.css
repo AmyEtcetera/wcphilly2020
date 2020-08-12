@@ -570,6 +570,12 @@ body:not(.overlay-header) .primary-menu ul ul:after {
   }
 }
 
+/* Limit size of featured image on sponsor pages so logo doesn't take up whole page */
+.wcb_sponsor-template-default .featured-media img {
+  max-height: 200px;
+  width: auto;
+}
+
 /* Links */
 
 a {
