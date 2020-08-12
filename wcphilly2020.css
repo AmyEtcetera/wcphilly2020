@@ -561,15 +561,6 @@ body:not(.overlay-header) .primary-menu ul ul:after {
 
 /* Featured Image */
 
-.singular .featured-media {
-  margin-top: 3rem;
-}
-@media (min-width: 700px) {
-  .singular .featured-media {
-    margin-top: 3rem;
-  }
-}
-
 /* Limit size of featured image on sponsor pages so logo doesn't take up whole page */
 .wcb_sponsor-template-default .featured-media img {
   max-height: 200px;
