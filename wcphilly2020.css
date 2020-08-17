@@ -746,7 +746,12 @@ ul.tix-attendee-list img,
 
 .wcb_speaker-template-default .speaker-avatar img {
   float: left;
+  margin-bottom: 1em;
   margin-right: 1em;
+}
+
+h2.speaker-sessions {
+  clear: both;
 }
 
 /* Fix left margins on list of sessions */
