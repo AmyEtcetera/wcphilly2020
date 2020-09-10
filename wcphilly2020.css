@@ -125,6 +125,14 @@ input[type="submit"]:hover {
   text-decoration: none !important;
 }
 
+/* Decrease post-inner top margin */
+
+@media (min-width: 700px) {
+  .post-inner {
+    margin-top: 5rem;
+  }
+}
+
 /* Add margin to images aligned left/right */
 
 [class*="wp-block"]:not(.alignwide):not(.alignfull)
