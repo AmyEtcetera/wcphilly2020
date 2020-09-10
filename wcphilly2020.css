@@ -14,6 +14,7 @@
     Speakers
     Sessions
     Sponsors
+    Livestream Embeds
     Tickets
     Forms
     Footers
@@ -679,6 +680,10 @@ input[type="submit"]:focus,
   color: white;
 }
 
+.wp-block-button {
+  margin: 1rem 0;
+}
+
 /* ----------------------------------------------- */
 /*	Organizers/Attendees
 /* ----------------------------------------------- */
@@ -868,6 +873,14 @@ h2.speaker-sessions {
 .sponsor-level.silver .sponsor-level-title,
 .sponsor-level.bronze .sponsor-level-title {
   margin-top: 2rem;
+}
+
+/* ----------------------------------------------- */
+/*	Livestream Embeds
+/* ----------------------------------------------- */
+
+.wp-block-wordcamp-youtube-live-chat-embed__availability-warning {
+  border-left: 5px solid #a4cdf0;
 }
 
 /* ----------------------------------------------- */
