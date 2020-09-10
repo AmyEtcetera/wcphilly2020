@@ -125,11 +125,11 @@ input[type="submit"]:hover {
   text-decoration: none !important;
 }
 
-/* Decrease post-inner top margin */
+/* Decrease post-inner top padding */
 
 @media (min-width: 700px) {
   .post-inner {
-    margin-top: 5rem;
+    padding-top: 5rem;
   }
 }
 
