@@ -879,8 +879,14 @@ h2.speaker-sessions {
 /*	Livestream Embeds
 /* ----------------------------------------------- */
 
+/* Change border color of live-chat embed warning */
 .wp-block-wordcamp-youtube-live-chat-embed__availability-warning {
   border-left: 5px solid #a4cdf0;
+}
+
+/* Remove extra padding around livestream embed */
+.wp-embed-responsive .wp-embed-aspect-4-3 .wp-block-embed__wrapper:before {
+  padding-top: 56.25%;
 }
 
 /* ----------------------------------------------- */
