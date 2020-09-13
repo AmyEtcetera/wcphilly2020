@@ -15,6 +15,7 @@
     Sessions
     Sponsors
     Livestream Embeds
+    Schedule
     Tickets
     Forms
     Footers
@@ -887,6 +888,16 @@ h2.speaker-sessions {
 /* Remove extra padding around livestream embed */
 .wp-embed-responsive .wp-embed-aspect-4-3 .wp-block-embed__wrapper:before {
   padding-top: 56.25%;
+}
+
+/* ----------------------------------------------- */
+/*	Schedule
+/* ----------------------------------------------- */
+
+/* Increase width of time column to fit times */
+
+th.wcpt-col-time {
+  width: 100px;
 }
 
 /* ----------------------------------------------- */
