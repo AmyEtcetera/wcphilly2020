@@ -900,6 +900,27 @@ th.wcpt-col-time {
   width: 100px;
 }
 
+/* Format to allow separate line for speakers */
+
+.wcpt-schedule .wcb-session-cell-content a.wcpt-session-title {
+  display: block;
+  padding-bottom: 0.5rem;
+}
+
+span.wcpt-session-speakers:before {
+  color: #464646;
+  content: "Speaker(s): ";
+  font-style: italic;
+}
+
+span.wcpt-session-speakers {
+  font-size: 1.5rem;
+}
+
+span.wcpt-session-speakers a {
+  text-decoration: none;
+}
+
 /* ----------------------------------------------- */
 /*	Tickets
 /* ----------------------------------------------- */
