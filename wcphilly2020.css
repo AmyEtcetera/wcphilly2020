@@ -928,14 +928,22 @@ span.wcpt-session-speakers a {
 }
 
 .email-form {
-  bottom: 50px;
-  font-size: 16px;
-  right: 100px;
+  font-size: 16px !important;
   width: 350px !important;
 }
 
 .fav-session-share-tab div {
-  font-size: 16px;
+  font-size: 16px !important;
+}
+
+.fav-session-share-tabcontent button {
+  font-size: ;
+}
+
+#fav-session-print {
+  display: table;
+  margin: 3rem auto;
+  padding: 1rem;
 }
 
 .entry-content a.show-email-form {
@@ -951,6 +959,9 @@ span.wcpt-session-speakers a {
   border: solid 1px #450c17;
   border-radius: 0.5em;
   color: white !important;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.0333em;
 }
 
 .entry-content a.show-email-form:hover,
