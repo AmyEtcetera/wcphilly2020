@@ -979,11 +979,12 @@ span.wcpt-session-speakers a {
   color: white !important;
 }
 
-.dashicons-star-filled:before {
-  vertical-align: middle;
+.show-email-form .dashicons-star-filled {
+  padding-top: 4px;
 }
 
 .dashicons-email-alt {
+  height: 100%;
   width: auto;
 }
 
