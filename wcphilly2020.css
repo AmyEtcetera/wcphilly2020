@@ -19,6 +19,7 @@
     Tickets
     Forms
     Footers
+    Print
    ----------------------------------------------- */
 
 /* ----------------------------------------------- 
@@ -1150,4 +1151,23 @@ body.admin-bar #tix {
 .powered-by-wordpress a,
 a.to-the-top {
   font-weight: normal;
+}
+
+/* ----------------------------------------------- */
+/*	Print
+/* ----------------------------------------------- */
+
+@media print {
+  a[href^="http"]:after {
+    content: "";
+  }
+
+  .singular .entry-header-inner.section-inner.medium,
+  .archive-header-inner.section-inner.medium.section-inner.medium {
+    box-shadow: none;
+  }
+
+  .singular .entry-header {
+    padding: 2rem;
+  }
 }
