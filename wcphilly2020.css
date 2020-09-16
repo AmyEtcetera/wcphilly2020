@@ -941,14 +941,14 @@ span.wcpt-session-speakers a {
   background-color: #930635;
   border: solid 1px #450c17;
   border-radius: 0.5em;
-  color: white;
+  color: white !important;
 }
 
-.show-email-form:hover,
-.show-email-form:focus {
+.entry-content a.show-email-form:hover,
+.entry-content a.show-email-form:focus {
   background-color: #770223;
   border: solid 1px #450c17;
-  color: white;
+  color: white !important;
 }
 
 .dashicons-star-filled:before {
