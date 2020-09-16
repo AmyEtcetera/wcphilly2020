@@ -938,7 +938,7 @@ span.wcpt-session-speakers a {
   line-height: 100%;
   padding: 0.5rem;
   right: 1rem;
-  width: auto;
+  width: auto !important;
   z-index: 9999;
 
   /* Match site button styling */
