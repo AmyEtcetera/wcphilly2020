@@ -923,12 +923,13 @@ span.wcpt-session-speakers a {
 
 /* Save Favorites Button/Pop-Up */
 
-.email-form.fave-sesison-email-form-hide,
-.email-form.fave-sesison-email-form-show {
-  width: auto;
+.email-form {
+  width: 350px;
+  bottom: 50px;
+  right: 100px;
 }
 
-.show-email-form {
+.entry-content a.show-email-form {
   bottom: 1rem;
   line-height: 100%;
   padding: 0.5rem;
@@ -952,6 +953,10 @@ span.wcpt-session-speakers a {
 
 .dashicons-star-filled:before {
   vertical-align: middle;
+}
+
+.dashicons-email-alt {
+  width: auto;
 }
 
 .dashicons-email-alt:before {
