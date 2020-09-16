@@ -935,9 +935,11 @@ span.wcpt-session-speakers a {
 
 .fav-session-share-tab div {
   font-size: 16px !important;
+  font-weight: 600;
 }
 
 .fav-session-share-tabcontent {
+  min-height: 170px !important;
   padding: 1.75rem !important;
 }
 
