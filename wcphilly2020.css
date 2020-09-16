@@ -936,8 +936,16 @@ span.wcpt-session-speakers a {
   font-size: 16px !important;
 }
 
-.fav-session-share-tabcontent button {
-  font-size: ;
+.fav-session-share-tabcontent {
+  padding: 1.75rem !important;
+}
+
+#fav-sessions-form {
+  padding: 1rem 0;
+}
+
+#fav-sessions-email-address {
+  margin-bottom: 1rem !important;
 }
 
 #fav-session-print {
@@ -976,13 +984,14 @@ span.wcpt-session-speakers a {
 }
 
 .dashicons-email-alt {
-  font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-    Helvetica, sans-serif;
   width: auto;
 }
 
 .dashicons-email-alt:before {
   content: "Save favorites";
+  font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Helvetica, sans-serif;
+  font-weight: 600;
 }
 
 /* ----------------------------------------------- */
