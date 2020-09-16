@@ -921,6 +921,43 @@ span.wcpt-session-speakers a {
   text-decoration: none;
 }
 
+/* Save Favorites Button/Pop-Up */
+
+.email-form.fave-sesison-email-form-hide,
+.email-form.fave-sesison-email-form-show {
+  width: auto;
+}
+
+.show-email-form {
+  bottom: 1rem;
+  line-height: 100%;
+  padding: 0.5rem;
+  right: 1rem;
+  width: auto;
+  z-index: 9999;
+
+  /* Match site button styling */
+  background-color: #930635;
+  border: solid 1px #450c17;
+  border-radius: 0.5em;
+  color: white;
+}
+
+.show-email-form:hover,
+.show-email-form:focus {
+  background-color: #770223;
+  border: solid 1px #450c17;
+  color: white;
+}
+
+.dashicons-star-filled:before {
+  vertical-align: middle;
+}
+
+.dashicons-email-alt:before {
+  content: "Save favorite sessions";
+}
+
 /* ----------------------------------------------- */
 /*	Tickets
 /* ----------------------------------------------- */
