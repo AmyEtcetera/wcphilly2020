@@ -924,7 +924,13 @@ span.wcpt-session-speakers a {
 
 /* Add time length to community track */
 
-.wcb-track-community-track .wcb-session-cell-content a:after {
+th.wcpt-col-track:nth-of-type(3) {
+  width: 29%;
+}
+
+.wcb-track-community-track
+  .wcb-session-cell-content
+  a.wcpt-session-title:after {
   content: " (45 minutes)";
 }
 
