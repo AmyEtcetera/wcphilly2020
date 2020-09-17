@@ -922,6 +922,12 @@ span.wcpt-session-speakers a {
   text-decoration: none;
 }
 
+/* Add time length to community track */
+
+.wcb-track-community-track .wcb-session-cell-content a:after {
+  content: " (45 minutes)";
+}
+
 /* Save Favorites Button/Pop-Up */
 
 #fav-session-email-form input[type="submit"] {
