@@ -897,6 +897,7 @@ h2.speaker-sessions {
 .page-slug-track-2 .wp-block-buttons,
 .page-slug-community-track .wp-block-buttons {
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 /* ----------------------------------------------- */
