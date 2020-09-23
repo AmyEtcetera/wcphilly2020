@@ -893,6 +893,7 @@ h2.speaker-sessions {
 
 /* Remove bottom margin from button groups */
 
+.page-slug-schedule,
 .page-slug-track-1 .wp-block-buttons,
 .page-slug-track-2 .wp-block-buttons,
 .page-slug-community-track .wp-block-buttons {
