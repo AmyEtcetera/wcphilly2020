@@ -938,7 +938,7 @@ th.wcpt-col-track:nth-of-type(4) {
   width: 30%;
 }
 
-.wcb-track-community-track
+.wcb-track-community-track:not(.wcb-track-track-1):not(.wcb-track-track-2)
   .wcb-session-cell-content
   a.wcpt-session-title:after {
   content: " (45 minutes)";
