@@ -831,9 +831,9 @@ h2.speaker-sessions {
 /* Add background color block to speakers bios under sessions */
 
 .wcb_session-template-default .wp-block-wordcamp-speakers {
-  background: #efefef;
+  background: #ebf3f7;
   border-radius: 10px;
-  padding: 2em 2em 0;
+  padding: 2em 2em 0.5em;
 }
 
 .wcb_session-template-default
