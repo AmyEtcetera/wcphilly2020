@@ -828,6 +828,18 @@ h2.speaker-sessions {
   margin-left: 0;
 }
 
+.wcb_session-template-default .wp-block-wordcamp-speakers {
+  background: #ccc;
+  border-radius: 10px;
+  padding: 2em 2em 0;
+}
+
+.wcb_session-template-default
+  .wp-block-wordcamp-speakers
+  .wordcamp-speakers__title {
+  margin-top: 0;
+}
+
 /* ----------------------------------------------- */
 /*	Sponsors
 /* ----------------------------------------------- */
