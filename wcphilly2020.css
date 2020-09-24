@@ -842,6 +842,12 @@ h2.speaker-sessions {
   margin-top: 0;
 }
 
+/* After Party session format */
+
+.after-party-list {
+  margin-left: 2rem;
+}
+
 /* ----------------------------------------------- */
 /*	Sponsors
 /* ----------------------------------------------- */
