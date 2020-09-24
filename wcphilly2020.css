@@ -845,7 +845,7 @@ h2.speaker-sessions {
 /* After Party session format */
 
 .after-party-list {
-  margin-left: 2rem;
+  margin-left: 2rem !important;
 }
 
 /* ----------------------------------------------- */
