@@ -897,6 +897,22 @@ h2.speaker-sessions {
   margin-top: 2rem;
 }
 
+/* Sponsor Hub */
+
+/* Increase column padding */
+
+@media (max-width: 781px) {
+  .page-slug-sponsor-hub .wp-block-column {
+    padding: 0 1em;
+  }
+}
+
+@media (min-width: 782px) {
+  .page-slug-sponsor-hub .wp-block-column {
+    padding: 0 2em;
+  }
+}
+
 /* ----------------------------------------------- */
 /*	Livestream Embeds
 /* ----------------------------------------------- */
