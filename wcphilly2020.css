@@ -1047,15 +1047,15 @@ th.wcpt-col-track:nth-of-type(4) {
 }
 
 .dashicons-email-alt {
-  height: 100%;
-  width: auto;
+  height: 100% !important;
+  width: auto !important;
 }
 
 .dashicons-email-alt:before {
   content: "Save favorites" !important;
   font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-    Helvetica, sans-serif;
-  font-weight: 600;
+    Helvetica, sans-serif !important;
+  font-weight: 600 !important;
 }
 
 /* ----------------------------------------------- */
